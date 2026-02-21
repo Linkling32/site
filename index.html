@@ -3,11 +3,114 @@
 
     <head>
         <title>Mes Projets</title>
+        <style>
+            .pokeversus_out {
+                background-color: rgb(215, 205, 255);
+                clip-path: polygon(0 0,100% 0, 100% 100%, 0 80%);
+                height: 550px;
+            }
+
+            .pokeversus_in {
+                background-color: rgb(177, 157, 255);
+                clip-path: polygon(0 0,100% 0, 100% 100%, 0 80%);
+                display: flex;
+                justify-content: space-between;
+                height: 500px;
+            }
+
+            .poke_texte {
+                margin-left: 10%;
+                width: 25%;
+                color: rgb(13, 15, 49);
+            }
+
+            .poke_image {
+                display: flex;
+                justify-content: flex-end;
+                margin-right: 5%;
+                margin-top: 1%;
+            }
+
+            .site_webador {
+                display: flex;
+                justify-content: space-between;
+                height: 500px;
+            }
+
+            .webador_texte {
+                margin-right: 10%;
+                width: 30%;
+                color: rgb(152, 37, 152)
+            }
+
+            .webador_image {
+                display: flex;
+                justify-content: flex-end;
+                margin-left: 5%;
+                margin-top: 3%;
+            }
+
+            .site_incremental_out {
+                background-color: rgb(215, 205, 255);
+                clip-path: polygon(0 10%,100% 0, 100% 100%, 0 100%);
+                height: 550px;
+            }
+            
+            .site_incremental_in {
+                background-color: rgb(177, 157, 255);
+                clip-path: polygon(0 20%,100% 10%, 100% 100%, 0 100%);
+                display: flex;
+                justify-content: space-between;
+                height: 500px;
+            }
+        </style>
     </head>
 
-    <body style="background-color: rgb(13, 15, 39);">
-        <a style="color: red;" href="./Pokemon.py" download>
-            <img src="./pokemon battle.jpg" style="width: 30%; border-radius: 10%;" alt="Pikachu se bat contre Méga-Lucario">
-        </a>
+    <body style="background-color: rgb(13, 15, 49);">
+        <div class="pokeversus_out">
+            <div class="pokeversus_in">
+                <div class="poke_texte">
+                    <p style="font-size: 70px; font-family: sans-serif;">
+                        PokeVersus
+                    </p>
+                    <p style="font-size: 20px; font-family: sans-serif;">
+                        Mon premier grand projet de programmation avec la spécialité NSI, simulant des batailles entre "Pokemon".
+                        Ceci est le prototype du système sur lequel nous avons travaillé le mois suivant pour introduire les nouveaux élèves à notre spécialité.
+                    </p>
+                </div>
+                <a class="poke_image" href="./Pokemon.py" download>
+                    <img style="height: 85%; padding: 2%;" src="./pokemon battle.png" alt="Pikachu se bat contre Méga-Lucario">
+                </a>
+            </div>
+        </div>
+        <div class="site_webador">
+            <a class="webador_image" href="https://www.alain-aurensan.com/">
+                <img style="height: 80%; padding: 0%;" src="./webador site.png" alt="Logo du site alain-aurensan.com avec le texte SARL AURENSAN">
+            </a>
+            <div class="webador_texte">
+                <p style="font-size: 70px; font-family: sans-serif;">
+                    Site vitrine commercial
+                </p>
+                <p style="font-size: 20px; font-family: sans-serif;">
+                    Un site créé pour mon père en utilisant Webador, un outil de création en ligne.
+                    Il sert d'exposition pour tout ce qu'il vend et reçoit 50 à 150 visiteurs par mois, variant dans l'année, avec un total de 1400 visites depuis sa création en février 2025.
+                </p>
+            </div>
+        </div>
+        <div class="site_incremental_out">
+            <div class="site_incremental_in">
+                <div style="margin-left: 8%; margin-top: 8%;">
+                    <a href="https://www.alain-aurensan.com/">
+                        <img style="height: 80%; padding: 0%;" src="./incremental site.png" alt="Site web incrémental">
+                    </a>
+                </div>
+                <div style="width: 30%; margin-right: 10%; margin-top: 8%;">
+                    <p style="font-size: 30px; font-family: sans-serif;">
+                        Un jeu web de type incrémental sur lequel je travaille entre deux projets ou pour passer le temps,
+                        j'ai l'intention de le faire progresser avec moi et de le complexifier au fur et à mesure de mes études.
+                    </p>
+                </div>
+            </div>
+        </div>
     </body>
 </html>
